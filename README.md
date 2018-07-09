@@ -43,17 +43,3 @@ for x1_raw, y1_raw, x2_raw, y2_raw in additions:
     # y2 = FieldElement(y2_raw, prime)
     # p2 = Point(x2, y2, a, b)
 ```
-
-
-```python
-# Example where x1 != x2
-
-from ecc import FieldElement, Point
-
-prime = 137
-a = FieldElement(0, prime)
-b = FieldElement(7, prime)
-p = Point(FieldElement(73, prime), FieldElement(128, prime), a, b)
-
-print(p+p)
-```
